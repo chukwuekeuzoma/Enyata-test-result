@@ -18,6 +18,9 @@ import { Link } from "react-router-dom";
 export default function Overview(props) {
   const [loaderTwo, setLoaderTwo] = useState(false);
   const [films, setFlims] = useState([]);
+  const [people, setPeople] = useState([]);
+  const [starShips, setStarShips] = useState([]);
+  const [species, setSpecies] = useState([]);
 
   const getFilms = async () => {
     setLoaderTwo(true);
@@ -25,9 +28,26 @@ export default function Overview(props) {
     setFlims(response.data.results);
     setLoaderTwo(false);
   };
+  const getPeople = async () => {
+    let response = await axios.get("people");
+    setPeople(response.data.results);
+  };
+
+  const getStarShips = async () => {
+    let response = await axios.get("starships");
+    setStarShips(response.data.results);
+  };
+
+  const getSpecies = async () => {
+    let response = await axios.get("species");
+    setSpecies(response.data.results);
+  };
 
   useEffect(() => {
     getFilms();
+    getPeople();
+    getStarShips();
+    getSpecies();
   }, []);
 
   const overViewDetailsLink = "overview"
@@ -43,7 +63,7 @@ export default function Overview(props) {
             </div>
             <div className="overview-texts-container">
               <div>
-                <div style={{ fontSize: "16px", fontWeight: "700" }}>200</div>
+                <div style={{ fontSize: "16px", fontWeight: "700" }}>{films?.length}</div>
                 <div
                   style={{
                     color: "#00992B",
@@ -63,7 +83,7 @@ export default function Overview(props) {
             </div>
             <div className="overview-texts-container">
               <div>
-                <div style={{ fontSize: "16px", fontWeight: "700" }}>200</div>
+                <div style={{ fontSize: "16px", fontWeight: "700" }}>{starShips?.length}</div>
                 <div
                   style={{
                     color: "#00992B",
@@ -83,7 +103,7 @@ export default function Overview(props) {
             </div>
             <div className="overview-texts-container">
               <div>
-                <div style={{ fontSize: "16px", fontWeight: "700" }}>200</div>
+                <div style={{ fontSize: "16px", fontWeight: "700" }}>{people?.length}</div>
                 <div
                   style={{
                     color: "#00992B",
@@ -103,7 +123,7 @@ export default function Overview(props) {
             </div>
             <div className="overview-texts-container">
               <div>
-                <div style={{ fontSize: "16px", fontWeight: "700" }}>200</div>
+                <div style={{ fontSize: "16px", fontWeight: "700" }}>{species?.length}</div>
                 <div
                   style={{
                     color: "#00992B",
