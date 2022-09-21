@@ -34,7 +34,7 @@ function App() {
             }
           />
           <Route
-            path="/overview-details"
+            path="/overview-details/:id"
             element={
               <RouteWithLayout Layout={DetailsLayout} Component={OverviewDetails} />
             }
