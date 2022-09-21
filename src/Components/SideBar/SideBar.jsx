@@ -61,19 +61,21 @@ export default function SideBar(props) {
               </span>
             </div>
           </Link>
-          <div
-            onClick={() => setActive("People")}
-            className={
-              active === "People"
-                ? "DBN_icon_container_select_active"
-                : "DBN_icon_container_select"
-            }
-          >
-            <div className="box-icon-3"></div>
-            <span>
-              <span style={{ opacity: "0" }}>....</span>Species
-            </span>
-          </div>
+          <Link to="/Species" className="links">
+            <div
+              onClick={() => setActive("People")}
+              className={
+                active === "People"
+                  ? "DBN_icon_container_select_active"
+                  : "DBN_icon_container_select"
+              }
+            >
+              <div className="box-icon-3"></div>
+              <span>
+                <span style={{ opacity: "0" }}>....</span>Species
+              </span>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
