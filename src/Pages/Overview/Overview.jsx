@@ -19,7 +19,7 @@ export default function Overview(props) {
   const [loaderTwo, setLoaderTwo] = useState(false);
   const [films, setFlims] = useState([]);
 
-  const getMembers = async () => {
+  const getFilms = async () => {
     setLoaderTwo(true);
     let response = await axios.get("films");
     setFlims(response.data.results);
@@ -27,7 +27,7 @@ export default function Overview(props) {
   };
 
   useEffect(() => {
-    getMembers();
+    getFilms();
   }, []);
 
   return (
@@ -152,7 +152,7 @@ export default function Overview(props) {
                         director,
                         producer,
                         episode_id,
-                        characters,
+                        url,
                       },
                       index
                     ) => (
@@ -178,7 +178,7 @@ export default function Overview(props) {
                           <TableCell>{producer}</TableCell>
                           <TableCell>{episode_id}</TableCell>
                           <TableCell>
-                            {characters.map((all) => all[0])}
+                            {url}
                           </TableCell>
                       </TableRow>
                     )
