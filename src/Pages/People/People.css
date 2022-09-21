@@ -1,0 +1,7 @@
+.overview-pointer{
+    cursor: pointer;
+}
+
+.table-row:hover{
+    background: #FFFFFF;
+}
