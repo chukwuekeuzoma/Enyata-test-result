@@ -1,0 +1,22 @@
+.login-layout-container{
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.login_dashboardnav_container{
+    width: 40vw !important;
+    transition: inherit;
+    z-index: 3;
+}
+
+.login_children_container {
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 60px;
+    width: 60vw;
+    z-index: 1;
+  }

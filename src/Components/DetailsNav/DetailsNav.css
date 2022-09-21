@@ -1,0 +1,42 @@
+.d-nav-container{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(229, 229, 229, 0.3);
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 83vw;
+    position: fixed;
+  }
+
+.d-nav-back-button{
+    margin-left:50px;
+    display: flex;
+    align-items: center;
+}
+.d-nav-inner-container{
+      display: flex;
+      margin-right: 30px;
+  }
+  
+  .d-nav-right{
+      margin-right: 30px;
+  }
+  
+  .d-nav-pointer{
+      cursor: pointer;
+  }
+  
+  .profile{
+      display: flex;
+      align-items: center;
+  }
+  
+  
+  
+  
+  .h-line{
+      width: 1px;
+      height: 25px;
+      border: 1px solid #E5E5E5;
+  }

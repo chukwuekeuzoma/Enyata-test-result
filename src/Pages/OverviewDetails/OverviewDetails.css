@@ -1,0 +1,19 @@
+.OverviewDetails-container{
+    margin-left:45px;
+    display: flex;
+}
+
+.cover-container{
+    margin-left:10px;
+}
+
+
+.cover{
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.cover-conetent{
+    font-weight: 500;
+    font-size: 16px;
+}

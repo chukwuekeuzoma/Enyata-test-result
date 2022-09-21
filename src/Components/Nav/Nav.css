@@ -1,0 +1,37 @@
+.nav-container{
+  background: #FFFFFF;
+  box-shadow: 0px 2px 6px rgba(229, 229, 229, 0.3);
+  height: 64px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 83vw;
+  position: fixed;
+}
+
+.nav-inner-container{
+    display: flex;
+    margin-right: 30px;
+}
+
+.nav-right{
+    margin-right: 30px;
+}
+
+.nav-pointer{
+    cursor: pointer;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.h-line{
+    width: 1px;
+    height: 25px;
+    border: 1px solid #E5E5E5;
+}

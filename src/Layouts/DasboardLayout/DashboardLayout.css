@@ -1,0 +1,28 @@
+.dashboardlayout_container {
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.DBL_dashboardnav_container {
+    width: 20vw !important;
+    transition: inherit;
+    z-index: 3;
+  }
+
+  .DBL_children_container {
+    width: 80vw;
+    z-index: 1;
+    min-width: 80%;
+  }
+
+  .DBL_children_container-two {
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 60px;
+    width: 80vw;
+    z-index: 1;
+  }

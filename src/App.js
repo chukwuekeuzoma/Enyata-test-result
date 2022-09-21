@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import {DasboardLayout,DetailsLayout,LoginLayout} from "./Layouts"
+import {Login,Overview,OverviewDetails} from "./Pages"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+function RouteWithLayout({ Layout, Component, ...rest }) {
+  return (
+    <Layout {...rest}>
+      <Component {...rest} />
+    </Layout>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+        <Route
+            path="/"
+            element={
+              <RouteWithLayout Layout={LoginLayout} Component={Login} />
+            }
+          />
+          <Route
+            path="/overview"
+            element={
+              <RouteWithLayout Layout={DasboardLayout} Component={Overview} />
+            }
+          />
+          <Route
+            path="/overview-details"
+            element={
+              <RouteWithLayout Layout={DetailsLayout} Component={OverviewDetails} />
+            }
+          />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

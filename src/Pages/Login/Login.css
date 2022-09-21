@@ -1,0 +1,89 @@
+.paper {
+  padding: 20px;
+   height: auto;
+   width: 280px;
+   margin: 100px auto;
+   background: #FFFFFF;
+   border: 1px solid rgba(164, 167, 183, 0.3);
+   border-radius: 8px;
+}
+
+.login_logo {
+    text-align: center;
+}
+
+.login_input_email {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login_textfield {
+    width: 100% !important;
+}
+
+
+.login_input_password {
+    margin-top: 30px;
+}
+
+.login_Botton_container {
+    margin-top: 50px;
+}
+
+.login_Button {
+    width: 100% !important;
+    color: white !important;
+    background: #0A74DC !important;
+}
+
+.login_register {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dont_have {
+    color: rgba(32, 32, 32, 0.452);
+    font-size: 11px;
+}
+
+
+.forgotpassword {
+    cursor: pointer;
+    color: #0A74DC !important;
+    font-weight: bolder;
+    font-size: 11px;
+}
+
+.privacy{
+  font-weight: 400;
+  font-size: 12px;
+ line-height: 20px;
+ color: #303B54;
+}
+
+.and{
+    font-weight: 400;
+    font-size: 12px;
+   line-height: 20px;
+   color: #6b7283;
+}
+
+.privacy-conatainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.Password_field_container {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+  
+.Password_field {
+    color: red !important;
+    font-size: 11px !important;
+    min-height: 18px !important;
+    font-weight: bolder;
+  }
+

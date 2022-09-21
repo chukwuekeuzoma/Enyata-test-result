@@ -1,0 +1,87 @@
+.DBN_container {
+    transition: inherit;
+}
+
+.DBN_options_container {
+    height: 100vh;
+    width: 20vw;
+    max-width: 280px;
+    background: #031434;
+    position: fixed;
+}
+
+.DBN_Starwars{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: -20px;
+}
+
+.DBN_icon_container {
+    margin-top: 30px;
+    transition: inherit;
+}
+
+.DBN_icon_container-two {
+    margin-top: 60px;
+    transition: inherit;
+}
+
+.DBN_icon_container_select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    width: 200px;
+    margin-left: 10px;
+    color:white;
+}
+
+.DBN_icon_container_select_active {
+    background: #0A74DC !important;
+    color:white !important;
+    padding: 10px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.DBN_icon_container_select:hover {
+    background: #0A74DC !important;
+    color: white !important;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.box-icon{
+   width: 17px;
+   height: 16px;
+   background: #A9C1FF;
+   border-radius: 5px;
+}
+
+.box-icon-2{
+    width: 17px;
+    height: 16px;
+    background: #FFA9EC;
+    border-radius: 5px;
+ }
+
+ .box-icon-3{
+    width: 17px;
+    height: 16px;
+    background: #FDFFA9;
+    border-radius: 5px;
+ }
+

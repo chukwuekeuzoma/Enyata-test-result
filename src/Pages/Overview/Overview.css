@@ -1,0 +1,67 @@
+.overview-main-container{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.overview-cards{
+    width: 150px;
+    height: 130px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.overview-texts-container{
+  margin-top: 75px;
+}
+
+.overview-cards-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-colors-box{
+   width: 27px;
+   height: 26px;
+   background: #A9FFE0;
+   border-radius: 5px;
+}
+
+.cards-colors-box-starship{
+    width: 27px;
+    height: 26px;
+    background: #A9C1FF;
+    border-radius: 5px;
+}
+
+.cards-colors-box-people{
+    width: 27px;
+    height: 26px;
+    background:  #FFA9EC;
+    border-radius: 5px;
+}
+
+.cards-colors-box-species{
+    width: 27px;
+    height: 26px;
+    background:   #FDFFA9;
+    border-radius: 5px;
+}
+
+.films{
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-left:45px;
+    margin-bottom: 30px;
+}
+
+.overview-pointer{
+    cursor: pointer;
+}
+
+.table-row:hover{
+    background: #FFFFFF;
+}
