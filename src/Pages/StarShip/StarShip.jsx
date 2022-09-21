@@ -28,6 +28,9 @@ export default function StarShip(props) {
   useEffect(() => {
     getStarShip();
   }, []);
+
+  const starShipDetailsLink = "starship"
+
   return (
     <>
       <div className="films">Starships</div>
@@ -63,7 +66,7 @@ export default function StarShip(props) {
                       }}
                       className="overview-pointer table-row"
                     >
-                      <Link to="/overview-details" className="links">
+                      <Link to={`/overview-details/${starShipDetailsLink}`} className="links">
                         <TableCell style={{ color: "#A4A7B7" }}>
                           <Checkbox />
                         </TableCell>
