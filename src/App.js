@@ -1,5 +1,5 @@
 import { DasboardLayout, DetailsLayout, LoginLayout } from "./Layouts";
-import { Login, Overview, OverviewDetails, StarShip, People } from "./Pages";
+import { Login, Overview, OverviewDetails, StarShip, People,Species } from "./Pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function RouteWithLayout({ Layout, Component, ...rest }) {
@@ -35,6 +35,12 @@ function App() {
             path="/People"
             element={
               <RouteWithLayout Layout={DasboardLayout} Component={People} />
+            }
+          />
+          <Route
+            path="/Species"
+            element={
+              <RouteWithLayout Layout={DasboardLayout} Component={Species} />
             }
           />
           <Route
