@@ -30,6 +30,8 @@ export default function Overview(props) {
     getFilms();
   }, []);
 
+  const overViewDetailsLink = "overview"
+
   return (
     <>
       <div>
@@ -163,7 +165,7 @@ export default function Overview(props) {
                         }}
                         className="overview-pointer table-row"
                       >
-                        <Link to="/overview-details" className="links">
+                        <Link to={`/overview-details/${overViewDetailsLink}`} className="links">
                           <TableCell style={{ color: "#A4A7B7" }}>
                             <Checkbox />
                           </TableCell>
